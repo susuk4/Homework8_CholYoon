@@ -26,3 +26,10 @@ initial = [0.3,0.1,0.3,0.3]
 
 #creating model
 model = hmm.DiscreteHiddenMarkovModel(A,B,initial,emission_symbols)
+
+#these are commands u did in lecture. I just tried to keep in here just for examples.
+set_random_seed(0); model.sample(10)
+set_random_seed(1); model.sample(10)
+set_random_seed(1);
+a,b = model.generate_sequence(20)
+a, list(b)
